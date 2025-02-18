@@ -102,7 +102,7 @@ Ajustes básicos
 ## RedHat Openshift Pipelines e RedHat Openshift GitOps
 - No bastion autenticar no Openshift de des/hml
   ```
-  oc login -u <user> -p <pass> --server=https://apps.cluster-2l9jd.sandbox628.opentlc.com:6443
+  oc login -u <user> -p <pass> --server=https://apps.cluster-v49vq.dynamic.redhatworkshops.io:6443
   ```
   Executar
   ```
@@ -239,7 +239,7 @@ Executar
     
       Criar os repositorios e subir codigo fonte 
       quarkus-hello
-          git clone http://gogs-gogs.apps.cluster-2l9jd.sandbox628.opentlc.com/gogs/quarkus-hello.git
+          git clone http://gogs-gogs.apps.cluster-v49vq.dynamic.redhatworkshops.io/gogs/quarkus-hello.git
           cp -r quarkus-hello-orig/* quarkus-hello
           cd quarkus-hello
           git add .
@@ -247,7 +247,7 @@ Executar
           git push -u origin master
           cd ..
       quarkus-hello-config
-          git clone http://gogs-gogs.apps.cluster-2l9jd.sandbox628.opentlc.com/gogs/quarkus-hello-config.git
+          git clone http://gogs-gogs.apps.cluster-v49vq.dynamic.redhatworkshops.io/gogs/quarkus-hello-config.git
           cp -r quarkus-hello-config-orig/* quarkus-hello-config
           cd quarkus-hello-config
           git add .
@@ -347,7 +347,7 @@ Executar
           spec:
             registrySources:
               insecureRegistries:
-              - smanager-registry-quay-quay.apps.cluster-2l9jd.sandbox628.opentlc.com
+              - smanager-registry-quay-quay.apps.cluster-v49vq.dynamic.redhatworkshops.io
           ```
           [Allowing Insecure Registry](https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/images/image-configuration#images-configuration-insecure_image-configuration)
 
